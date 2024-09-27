@@ -1,0 +1,15 @@
+.productDetails {
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1.5em;
+    margin: 1em 0;
+    width: 100%;
+    max-width: 800px;
+}
+  
+.productDetails img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+  

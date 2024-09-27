@@ -1,0 +1,34 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bodym {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bodym button {
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+@media (min-width: 600px){
+    .bodym{
+        margin-top: 60px;
+        flex-direction: row;
+    }
+}

@@ -1,0 +1,119 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container button{
+    width: 10%;
+    height: 50%;
+}
+
+#header {
+    height: 10%;
+    width: 15%;
+    order: 2;
+    background-color: lightblue;
+}
+
+#globalMenu {
+    height: 10%;
+    width: 85%;
+    order: 1;
+    background-color: lightgreen;
+}
+
+#globalMenu ul{
+    display: flex;
+    flex-direction: row;
+}
+
+#globalMenu li{
+    list-style-type: none;
+    margin: 5px;
+}
+
+#contextMenu {
+    height: 20%;
+    order: 3;
+    width: 100%;
+    background-color: lightyellow;
+}
+
+#Ads {
+    height: 20%;
+    order: 5;
+    width: 100%;
+    background-color: lightcoral;
+}
+
+#mainContent {
+    height: 30%;
+    order: 4;
+    width: 100%;
+    background-color: lightgray;
+}
+
+.container footer {
+    height: 10%;
+    order: 6;
+    width: 100%;
+    background-color: lightpink;
+}
+
+@media (min-width: 1000px) {
+    .container {
+        display: grid;
+        width: 100vw;
+        height: 100vh;
+        grid-template-areas:
+            "header header header"
+            "menu menu ads"
+            "context main ads"
+            "footer footer footer";
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 2fr 1fr 10fr 1fr;
+        gap: 10px;
+    }
+
+    #header {
+        grid-area: header;
+        background-color: lightblue;
+        height: 100%;
+        width: 100%;
+    }
+
+    #globalMenu {
+        grid-area: menu;
+        background-color: lightgreen;
+        height: 100%;
+        width: 100%;
+    }
+
+    #contextMenu {
+        grid-area: context;
+        background-color: lightyellow;
+        height: 100%;
+    }
+
+    #Ads {
+        grid-area: ads;
+        background-color: lightcoral;
+        height: 100%;
+    }
+
+    #mainContent {
+        grid-area: main;
+        background-color: lightgray;
+        height: 100%;
+    }
+
+    #footer {
+        grid-area: footer;
+        height: 100%;
+        background-color: lightpink;
+        text-align: center;
+    }
+}

@@ -1,0 +1,41 @@
+.sugestoesContainer {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 50px;
+}
+
+.cardSugestao{
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+}
+
+.cardSugestao img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.sugestaoamigos{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+}
+
+@media (min-width: 600px){
+    .sugestaoamigos{
+        flex-direction: column;
+    }
+    .sugestoesContainer{
+        width: 20vw;
+    }
+}

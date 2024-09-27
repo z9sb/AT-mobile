@@ -1,0 +1,98 @@
+*{
+    padding: 0px;
+}
+
+.logo{
+    width: 90px;
+}
+
+.container{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow-x: hidden;
+
+}
+
+.body{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.menu{
+    display: flex ;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+}
+
+.containerHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 11vh;
+    width: 100vw;
+}
+
+.containerHeader a{
+    padding-left: 30px;
+}
+
+.FaHome{
+    position: fixed;
+    right: 20px;
+    padding-top: 30px;
+    height: 80px;
+}
+
+.menuOpen{
+    width: 250px;
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+
+.menuOptions{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    justify-content: space-evenly;
+    width: 25vw;
+}
+
+.menuOptions li{
+    padding: 2px;
+}
+
+.menuTag{
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 10px;
+    flex-shrink: 100;
+}
+
+.menuShow{
+    max-height: 500px;
+}
+
+.menuHide {
+    max-height: 0;
+    opacity: 0;
+    display: none;
+}
+
+@media (mix-width: 800px){
+    .menuOptions{
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        justify-content: space-evenly;
+        width: 25vw;
+    }
+};

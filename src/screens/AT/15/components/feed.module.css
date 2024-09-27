@@ -1,0 +1,25 @@
+.feedContainer {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.feed {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feed img {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+@media (min-width: 600px){
+    .feedContainer{
+        width: 40vw;
+    }
+}

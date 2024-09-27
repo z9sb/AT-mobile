@@ -1,0 +1,168 @@
+*{
+    padding: 0px;
+}
+
+.logo{
+    width: 90px;
+    padding: 10px;
+}
+
+.principal{
+    width: 90vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    width: 100vw;
+    height: 120px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    background-color: azure;
+    align-items: center;
+    z-index: 100;
+}
+
+.home{
+    background-color: aliceblue;
+    border-radius: 10px;
+    margin: 5px;
+    text-align: justify;
+    margin-top: 130px;
+    padding: 10px;
+}
+
+.home button{
+    background-color: azure;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+}
+
+.menu{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 30px;
+    align-items: center;
+}
+
+.menuOptions{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    justify-content: space-evenly;
+    width: 25vw;
+}
+
+.menuOptions a{
+    text-decoration: none;
+    color: black;
+}
+
+.menuTag{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.menuShow{
+    max-height: 500px;
+}
+
+.menuHide {
+    max-height: 0;
+    opacity: 0;
+    display: none;
+}
+
+.topicos{
+    height: 100vh;
+}
+
+.topicoCard{
+    border: 1px solid;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.topicos li{
+    list-style-type: none;
+}
+
+.carditem{
+    background-color: azure;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: justify;
+    margin: 5px;
+}
+
+.textResposta{
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
+    height: 40%;
+    width: 100%;
+}
+
+.textResposta button{
+    width: 20%;
+}
+
+.textResposta textarea{
+    width: 95%;
+    height: 30vw;
+    border-radius: 10px;
+    resize: none;
+    padding: 10px;
+}
+
+#topicoCardRespondido{
+    display: none;
+}
+
+@media (min-width: 800px){
+    .menuOptions{
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        justify-content: space-evenly;
+    }
+
+    .principal{
+        display: flex;
+        flex-direction: row;
+        width: 95vw;
+    }
+
+    .card{
+        margin-top: 120px;
+    }
+
+    .textResposta textarea{
+        width: 60%;
+        height: 100%;
+    }
+    .topicos{
+        margin-top: 120px;
+    }
+
+    #topicoCardRespondido{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
